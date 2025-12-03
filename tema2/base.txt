@@ -1,0 +1,22 @@
+```
+CREATE DATABASE IF NOT EXISTS ganaderia;
+USE ganaderia;
+
+CREATE TABLE IF NOT EXISTS lotes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    tipo VARCHAR(50),
+    cantidad INT,
+    precio DECIMAL(10,2),
+    imagen VARCHAR(100),
+    detalles TEXT
+);
+
+CREATE TABLE IF NOT EXISTS contactos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    correo VARCHAR(100),
+    celular VARCHAR(20),
+    horario_llamada VARCHAR(50)
+); ```
